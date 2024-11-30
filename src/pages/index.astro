@@ -1,0 +1,230 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+
+const appStoreImg = '~/assets/images/app-store.png';
+const appStoreDownloadLink = 'https://www.waitlistr.com/lists/0261cd44/meal-planner-waitlist';
+
+const googlePlayImg = '~/assets/images/google-play.png';
+const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+
+const metadata = {
+  title: 'Meal Planner - Recipe App Homepage',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Your Personal Recipe Organizer"
+    image={{
+      src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Meal Planner Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white highlight">Meal Planner App</span>: <br /> simplify your meals <span
+        class="hidden xl:inline">and save time</span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Effortlessly plan your weekly meals, extract recipes, share schedules, and streamline your grocery shopping.
+      </span>
+      Download now to revolutionize how you plan and prepare meals.
+    </Fragment>
+
+    <div slot="actions" class="flex max-w-sm gap-4">
+      <Button  href={appStoreDownloadLink}>
+          Join the Waitlist
+      </Button>
+
+      <!--<Button variant="link" href={googlePlayDownloadLink}>-->
+      <!--  <Image src={googlePlayImg} alt="Google Play Image" width={200} />-->
+      <!--</Button>-->
+    </div>
+  </Hero2>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    id="features"
+    title="How to use Meal Planner?"
+    subtitle="Transform your meal planning experience with ease. Meal Planner offers innovative tools to extract recipes, organize weekly meals, and create collaborative schedules for your household."
+    tagline="Step-by-step guide"
+    columns={2}
+    items={[
+      {
+        title: 'Download and install the app',
+        description: `Start by downloading Meal Planner from your device's app store.`,
+        icon: 'tabler:square-number-1',
+      },
+      {
+        title: 'Extract recipes',
+        description:
+          'Use our recipe extraction feature to easily pull recipes directly from Google search results or websites.',
+        icon: 'tabler:square-number-2',
+      },
+      {
+        title: 'Plan your weekly meals',
+        description: 'Add recipes to your weekly schedule with just a few taps, organizing meals effortlessly.',
+        icon: 'tabler:square-number-3',
+      },
+      {
+        title: 'Collaborate with family',
+        description: `Share and co-edit your meal plan with family members for seamless meal coordination.`,
+        icon: 'tabler:square-number-4',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Meal Planner Features Image',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Intuitive Meal Scheduling',
+        description:
+          'A user-friendly interface that makes meal planning quick and easy, helping you stay organized throughout the week.',
+        icon: 'tabler:wand',
+      },
+      {
+        title: 'Collaborative Schedules',
+        description:
+          'Share meal plans with your household, enabling everyone to stay on the same page and contribute to the plan.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Smart Shopping Lists',
+        description:
+          'Automatically generate a shopping list based on your planned recipes, ensuring you never miss an ingredient.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Recipe Management',
+        description: 'Save, organize, and access your favorite recipes anytime with ease.',
+        icon: 'tabler:carousel-horizontal',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Meal Planner Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Offline Recipe Access',
+        description: 'Save recipes for offline use, ensuring you can cook even without an internet connection.',
+        icon: 'tabler:wifi-off',
+      },
+      {
+        title: 'Secure Cloud Backup',
+        description:
+          'Sync your meal plans and recipes securely to the cloud, providing easy access from any device.',
+        icon: 'tabler:file-download',
+      },
+      {
+        title: 'Frequent Updates',
+        description: 'Enjoy new features and recipes added regularly to keep your meal planning fresh and exciting.',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Favorite Recipes',
+        description: `Create a list of favorite recipes for quick access and easier planning.`,
+        icon: 'tabler:heart',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Meal Planner Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Meal Planner by the Numbers"
+    stats={[
+      { amount: '30K', icon: 'tabler:download' },
+      { amount: '25K', icon: 'tabler:users' },
+      { amount: '4.9', icon: 'tabler:user-star' },
+    ]}
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="What our users say?"
+    testimonials={[
+      {
+        testimonial: `Meal Planner has transformed how I organize my meals. The ability to extract recipes directly from Google and automatically add ingredients to my shopping list is a game-changer.`,
+        name: 'Cary Kennedy',
+        job: 'Home Chef',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        testimonial: `Meal planning has never been this seamless! The collaborative schedule feature is perfect for my busy family, and the shopping list automation saves so much time.`,
+        name: 'Josh Wilkinson',
+        job: 'Parent and Food Enthusiast',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+    ]}
+  />
+
+  <!-- CTA Widget ******************** -->
+
+  <CallToAction
+    id="download"
+    title="Start Your Meal Planning Journey Today"
+    description="Take control of your meals with our easy-to-use app. Plan, organize, and collaborate to make every meal effortless and enjoyable."
+    actions={[
+      { text: 'Join the Waitlist', href: appStoreDownloadLink },
+
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1510627498534-cf7e9002facc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Download Meal Planner App',
+    }}
+  />
+</Layout>
