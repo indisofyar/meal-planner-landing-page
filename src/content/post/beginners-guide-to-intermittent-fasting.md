@@ -6,10 +6,10 @@ excerpt: A brief intro of what is intermittent fasting and a simple guide to get
 image: https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=2428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 category: Tutorials
 tags:
-  - astro
-  - tailwind css
-metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  - fasting
+  - weightloss
+#metadata:
+#  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
 # The Ultimate Guide to Intermittent Fasting: A Diet Plan for Beginners
 
