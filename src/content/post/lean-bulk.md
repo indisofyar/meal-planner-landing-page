@@ -2,7 +2,7 @@
 publishDate: 2024-12-03T00:00:00Z
 author: Indi S
 title: A Lean Bulk Diet Plan - Build Muscle Without Packing on Fat  
-excerpt: A brief intro of what a 13000 cal diet plan might include and a simple guide to get started
+excerpt: A lean bulk is a structured plan that helps you gain muscle by eating more calories than you burn, but not so many that you gain excessive fat. Think of it like building a house—you want strong walls (muscle) without piling on unnecessary clutter (fat). The trick lies in choosing the right foods, keeping your calorie surplus moderate, and timing your meals effectively.
 image: https://images.unsplash.com/photo-1531928351158-2f736078e0a1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlldHxlbnwwfHwwfHx8Mg%3D%3D
 category: Tutorials
 tags:
