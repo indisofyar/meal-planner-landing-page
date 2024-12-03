@@ -6,8 +6,8 @@ excerpt: A lean bulk is a structured plan that helps you gain muscle by eating m
 image: https://images.unsplash.com/photo-1531928351158-2f736078e0a1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlldHxlbnwwfHwwfHx8Mg%3D%3D
 category: Tutorials
 tags:
-  - recipes
-  - low-calorie
+  - fasting
+  - weight-loss
 #metadata:
 #  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
 ---
